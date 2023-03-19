@@ -1,0 +1,93 @@
+/* основний колір тексту, абзаців #434455 */
+
+/* другорядний колір тексту #2E2F42 */
+
+/* білий колір: шапка, футер, фон - #E7E9FC */
+
+/* білий колір тексту футер #F4F4FD */
+
+/* колір акценту(ефектів) #4D5AE5 */
+
+:root {
+	--primary-text-color: #434455;
+	--title-text-color: #2E2F42;
+	--accent-color: #4D5AE5;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: var(--primary-text-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* a:visited {
+	color: var(--primary-text-color);
+} */
+
+.list {
+	list-style: none;
+}
+
+
+/* Logo */
+
+.logo {
+	color: var(--title-text-color);
+}
+
+/* Nav */
+
+.site-nav .link {
+	color: var(--title-text-color);
+}
+
+.link.current {
+	color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+
+.contact-link {
+	color: var(--primary-text-color);
+}
+
+/* Hero */
+
+.hero-title {
+	color: var(--title-text-color);
+}
+
+.hero-btn {
+	color:#FFFFFF ;
+	background-color: var(--accent-color);
+}
+
+/* Section */
+
+.section-title {
+	color: var(--title-text-color);
+}
+
+/* Features */
+
+.feature-list .title {
+	color: var(--title-text-color);
+}
+
+/* Example */
+
+.example-list {
+	color: var();
+}
+
+/* Emploee */
+
+.emploee-title {
+	color: var(--title-text-color);
+}
