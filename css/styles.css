@@ -20,15 +20,17 @@ btn(500), h2(700) h3(500), p(400),  'Roboto';
 
 
 :root {
-	--primary-text-color: #434455;
+	--text-color: #434455;
 	--title-text-color: #2E2F42;
 	--accent-color: #4D5AE5;
-	--primary-white-color: #F4F4FD;
+	--white-site-color: #F4F4FD;
+	--main-background-color: #FFFFFF;
+	--footer-background-color: #2E2F42;
 }
 
 body {
-	background-color: #FFFFFF;
-	color: var(--primary-text-color);
+	background-color: var(--main-background-color);
+	color: var(--text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
@@ -45,12 +47,12 @@ button {
 	font-family: inherit;
 }
 
-/* a:visited {
-	color: var(--primary-text-color);
-} */
-
 .list {
 	list-style: none;
+}
+
+.link {
+	text-decoration: none;
 }
 
 /* Logo */
@@ -64,6 +66,16 @@ button {
 	letter-spacing: 0.03em;
 }
 
+.btn {
+	font-weight: 500;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+}
+
 /* Header */
 
 .site-nav .link {
@@ -72,18 +84,22 @@ button {
 	font-weight: 500;
 }
 
-.current {
+.accent {
 	color: var(--accent-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
+.nav-link:hover,
+.nav-link:focus,
 .contact-link:hover,
 .contact-link:focus {
 	color: var(--accent-color);
 }
 
 /* Hero */
+
+.hero {
+	background-color: var(--footer-background-color);
+}
 
 .hero-title {
 	color: var(--title-text-color);
@@ -95,14 +111,8 @@ button {
 }
 
 .hero-btn {
-	color: #FFFFFF;
+	color: var(--main-background-color);
 	background-color: var(--accent-color);
-	font-weight: 500;
-	cursor: pointer;
-
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.04em;
 }
 
 /* Section */
@@ -143,26 +153,29 @@ button {
 }
 
 /* Footer */
+.footer {
+	background-color: var(--footer-background-color);
+}
 
+.footer .logo {
+	color: var(--white-site-color);
+}
+
+.footer-text {
+	color: var(--white-site-color);
+}
 
 
 
 /* PORTFOLIO */
 
-.btn {
-	background-color: var(--primary-white-color);
+.portfolio-btn {
+	background-color: var(--white-site-color);
 	color: var(--accent-color);
-	font-weight: 500;
-	cursor: pointer;
-
-	display: flex;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.04em;
 }
 
-.btn:hover,
-.btn:focus {
-	color: #FFFFFF;
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+	color: var(--main-background-color);
 	background-color: var(--accent-color);
 }
